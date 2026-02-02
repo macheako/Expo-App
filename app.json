@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "miApp",
+    "slug": "miApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/UBLogo-Ball.png",
+    "scheme": "miApp",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-screen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anon.miapp",
+      "appleTeamId": "Y48DAMQU5J",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSExceptionDomains": {
+            "crunchy.co": {
+              "NSIncludesSubdomains": true,
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            }
+          }
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "splash": {
+        "image": "./assets/images/UBLogo-Text-Black.png",
+        "resizeMode": "contain"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anon.miapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      "expo-asset",
+      "expo-font",
+      [ "./plugins/withModifyGradle.js" ],
+      [ "expo-build-properties",
+      {
+        "android": {
+          "usesCleartextTraffic": true
+        }
+      }]
+    ]
+  }
+}

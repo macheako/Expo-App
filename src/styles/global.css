@@ -1,0 +1,69 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+ 
+@import "nativewind/theme";
+
+:root {
+    --ub-orange: #f58220;
+    --ub-orange-50: #ff660080;
+    --orange: #f58220;
+}
+
+.light-bg { background-color: #f8fafc; }
+.light-fg { background-color: #ffffff; }
+
+.dark-bg { background-color: #000000;}
+.dark-fg { background-color: #000000; }
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content {
+    align-items: center;
+    justify-content: center;
+}
+
+.bordered-content {
+    align-items: center;
+    justify-content: center;
+    border-radius: 30;
+    border-width: 2;
+    border-color: var(--ub-orange);
+}
+
+.shadow-1 {
+    box-shadow: 0px 3px 4px 0px #00000080;
+}
+
+.shadow-2 {
+    box-shadow: 4px 4px 8px 0px #000000ff;
+}
+
+.shadow-3 {
+    box-shadow: 0px 0px 5px 0px #000000ff;
+}
+
+.shadow-b-xs {
+    box-shadow: 0px 3px 3px 0px #000000DD;
+}
+
+.shadow-b-sm {
+    box-shadow: 0px 2px 4px 0px #000000ff;
+}
+
+.modal {
+    background-color: #00000080;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30;
+    border-width: 2;
+    border-color: var(--ub-orange);
+    width: 90%;
+    height: 90%;
+}

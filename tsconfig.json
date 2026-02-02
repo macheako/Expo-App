@@ -1,0 +1,28 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@docs/*":        ["docs/*"],
+      "@src/*":         ["src/*"],
+      "@assets/*":      ["assets/*"],
+      "@api/*":         ["src/services/*"],
+      "@utils/*":       ["src/utils/*"],
+      "@app/*":         ["app/*"],
+      "@components/*":  ["src/components/*"],
+      "@context/*":     ["src/context/*"],
+      "@types/*":       ["src/types/*"],
+      "@styles/*":      ["src/styles/*"],
+      "@locale/*":      ["assets/locale/*"],
+      "@modals/*":      ["src/components/modals/*"],
+      
+      "@assets/images":             ["assets/images/exports"],
+      "@assets/images/backgrounds": ["assets/images/backgrounds/exports"],
+      "@assets/images/animations":  ["assets/images/animations/exports"],
+      "@assets/gifs/backgrounds":   ["assets/gifs/backgrounds/exports"],
+      "@assets/gifs/animations":    ["assets/gifs/animations/exports"],
+    }
+  }
+}
