@@ -8,6 +8,19 @@
     "ios": "expo run:ios",
     "web": "expo start --web"
   },
+  "codegenConfig": {
+     "name": "AppSpecs",
+     "type": "modules",
+     "jsSrcsDir": "specs",
+     "android": {
+       "javaPackageName": "com.miApp.specs"
+     },
+     "ios": {
+      "modulesProvider": {
+        "NativeSampleModule": "NativeSampleModuleProvider"
+      }
+     }
+   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/elements": "^2.9.3",

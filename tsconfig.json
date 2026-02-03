@@ -17,6 +17,7 @@
       "@styles/*":      ["src/styles/*"],
       "@locale/*":      ["assets/locale/*"],
       "@modals/*":      ["src/components/modals/*"],
+      "@specs/*":       ["specs/*"],
       
       "@assets/images":             ["assets/images/exports"],
       "@assets/images/backgrounds": ["assets/images/backgrounds/exports"],
