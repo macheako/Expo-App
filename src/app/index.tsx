@@ -10,9 +10,20 @@ const StyledSafeView = styled(SafeAreaView);
 export default function Index() {
     const [value, setValue] = React.useState<string|null>("I'm a string");
 
+    React.useEffect(() => {
+        console.log('Connecting to scanner...');
+        SampleTurboModule?.startScanner("192.168.1.211", 2368, "127.0.0.1", 2368);
+    }, []);
+
     const onPress = () => {
-        const revString = SampleTurboModule?.reverseString(value);
-        setValue(revString);
+        console.log('onPress');
+        const scanResults = SampleTurboModule?.scan();
+        setValue(String(scanResults));
+
+        //const revString = SampleTurboModule?.reverseString(value);
+
+        // const imabool = SampleTurboModule?.startScanner("192.168.1.211", 2368, "127.0.0.1", 2368);
+        // setValue(imabool ? "TRUE" : "FUCK U");
     };
 
   return (
